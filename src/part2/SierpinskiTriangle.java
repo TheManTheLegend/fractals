@@ -9,6 +9,8 @@ public class SierpinskiTriangle {
 	private Point2D.Double top, right, left;
 	private Color background = new Color(34, 129, 34);
 	private Color foreground = StdDraw.YELLOW;
+	private Color white = StdDraw.WHITE;
+	private Color black = StdDraw.BLACK;
 	
 	public SierpinskiTriangle() {
 		StdDraw.setXscale(0, 150); 
@@ -17,12 +19,17 @@ public class SierpinskiTriangle {
 		top = new Point2D.Double(75, 150);
 		right = new Point2D.Double(150, 75);
 		left = new Point2D.Double(0, 75);
-		 
+		drawTriangle(top,right,left,white);
 		StdDraw.clear(StdDraw.GRAY); 
 	}
    
 	public void sierpinski(Point2D.Double a, Point2D.Double b, Point2D.Double c, int n) {
 	   // TODO: implement
+		if (n <=0) return ;
+		drawTriangle(new Point2D())
+		
+		
+		
     }
    
 	public void drawTriangle(Point2D.Double a, Point2D.Double b, Point2D.Double c, Color color) {
