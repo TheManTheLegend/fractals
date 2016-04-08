@@ -2,7 +2,7 @@ package part1;
 import java.awt.Color;
 import java.awt.geom.Point2D;
 
-import draw.StdDraw;
+import draw.UltraDraw;
 
 
 public class Square {
@@ -22,8 +22,8 @@ public class Square {
 	public void draw(Color color) {
 		double[] x = {points[0].x, points[1].x, points[2].x, points[3].x};
 		double[] y = {points[0].y, points[1].y, points[2].y, points[3].y};
-		StdDraw.setPenColor(color);
-		StdDraw.filledPolygon(x,y);
+		UltraDraw.setPenColor(color);
+		UltraDraw.filledPolygon(x,y);
 	}
 	
 	public Point2D.Double getTopLeft() {

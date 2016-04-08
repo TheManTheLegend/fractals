@@ -1,7 +1,7 @@
 package part1;
 import java.awt.Color;
 import java.awt.geom.Point2D;
-import draw.StdDraw;
+import draw.UltraDraw;
 
 
 public class SquareFractal {
@@ -9,15 +9,15 @@ public class SquareFractal {
 	private double shrink = 0.5;
 	
 	public SquareFractal() {
-		StdDraw.setXscale(0, 150); 
-		StdDraw.setYscale(0, 150); 
+		UltraDraw.setXscale(0, 150); 
+		UltraDraw.setYscale(0, 150); 
 		
 		Square square = new Square(new Point2D.Double(75, 75), 80);
 		 
-		StdDraw.clear(StdDraw.GRAY); 
+		UltraDraw.clear(UltraDraw.GRAY); 
 		fractal(square, 2, Color.WHITE);
 		
-		StdDraw.show();
+		UltraDraw.show();
 	}
 	
 	
